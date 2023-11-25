@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #d3e9ff;
+  font-family: Poppins;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* .text1 {
+  display: flex;
+  color: #000;
+  text-align: center;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+
+.text2 {
+  display: flex;
+  color: #24313d;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 6.4px;
+} */
+
+.calculator-row {
+  display: flex;
+  height: 100%;
+}
+
+.calculator-col {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-body {
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  border-radius: 6px;
+  background: #01012b;
+}
+
+.cal-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40px;
+  max-height: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #234a5a;
+  filter: drop-shadow(-8px -4px 26px #14253b);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.green {
+  color: #00ff9f;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.text {
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-result {
+  max-height: 80px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+  text-align: end;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-color: #01012b;
+  border: none;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.result {
+  max-width: auto;
+}

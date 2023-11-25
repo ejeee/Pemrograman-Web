@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALKULATOR SEDERHANA</title>
+  </head>
+  <body>
+    <h1>PENJUMLAHAN BILANGAN</h1>
+    <label>Bilangan Pertama</label>
+    <input type="number" id="pertama" />
+    <label>Bilangan Kedua</label>
+    <input type="number" id="kedua" />
+    <div style="margin-top: 15px">
+      <button id="jumlahkan" onclick="penjumlahan()">Jumlahkan</button>
+      <button id="ulang" onclick="reset()">Ulang</button>
+    </div>
+
+    <div class="result"></div>
+
+    <script>
+      function penjumlahan() {
+        const pertama = parseFloat(document.getElementById("pertama").value);
+        const kedua = parseFloat(document.getElementById("kedua").value);
+
+        if (!isNaN(pertama) && !isNaN(kedua)) {
+          const hasil = pertama + kedua;
+          return alert(hasil);
+        } else {
+          return alert("Bilangan tidak valid!");
+        }
+      }
+
+      function reset() {
+        const pertama = document.getElementById("pertama");
+        const kedua = document.getElementById("kedua");
+
+        pertama.value = "";
+        kedua.value = "";
+      }
+    </script>
+  </body>
+</html>
